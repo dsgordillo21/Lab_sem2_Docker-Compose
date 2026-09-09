@@ -4,3 +4,15 @@ services:
     build: ./api
     ports:
       - "3000:3000"
+
+  api02:
+    container_name: api02
+    build: ./api
+    ports:
+      - "3001:3000"
+
+  api03:
+    container_name: api03
+    build: ./api
+    ports:
+      - "3002:3000"
