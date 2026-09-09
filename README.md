@@ -53,3 +53,18 @@ La configuración se realiza mediante variables de entorno definidas en el archi
 ## Volumen
 
 Se utiliza el volumen postgres_data para almacenar de manera persistente los datos de PostgreSQL, evitando que se pierdan al eliminar o volver a crear el contenedor.
+
+## Tipos de redes en Docker
+
+- Bridge: Red utilizada por defecto. Permite la comunicación entre contenedores que se encuentran en el mismo host.
+- Host: Elimina el aislamiento de red. El contenedor utiliza directamente la red del equipo anfitrión.
+- None: Deja al contenedor sin acceso a una red externa.
+- Overlay: Permite comunicar contenedores que se encuentran en diferentes hosts Docker.
+- Macvlan: Asigna una dirección MAC al contenedor, haciendo que aparezca como un dispositivo dentro de la red.
+- IPvlan: Permite conectar contenedores directamente a redes externas utilizando direccionamiento IP.
+
+## Tipos de almacenamiento en Docker
+
+- Volumes: Son administrados por Docker y permiten mantener los datos aunque el contenedor sea eliminado.
+- Bind mounts: Enlazan una carpeta o archivo del equipo anfitrión con una ubicación dentro del contenedor.
+- Tmpfs mounts: Almacenan información temporalmente en la memoria RAM y los datos se pierden cuando el contenedor se detiene.
