@@ -71,3 +71,15 @@ Se utiliza el volumen postgres_data para almacenar de manera persistente los dat
 
 ## Persistencia
 Se comprobó la persistencia del volumen al detener y volver a crear los contenedores, verificando que los datos almacenados en PostgreSQL se mantuvieron.
+
+## Capturas del proyecto desplegado
+![alt text](image.png)
+Servicios desplegados correctamente mediante Docker Compose.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+Volumen utilizado para la persistencia de datos de PostgreSQL.
+
+![alt text](image-3.png)
+Verificación de persistencia de la información después de volver a crear los contenedores.
