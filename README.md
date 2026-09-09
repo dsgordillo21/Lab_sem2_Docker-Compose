@@ -18,7 +18,7 @@ Para validar la configuración del archivo docker-compose.yaml se utiliza el sig
 
 ```bash
 docker compose config
-
+```
 
 ## Despliegue
 
@@ -26,3 +26,30 @@ Para construir y levantar los servicios:
 
 ```bash
 docker compose up -d --build
+```
+
+Para verificar los contenedores en ejecución:
+
+```bash
+docker compose ps
+```
+
+Para detener los servicios:
+
+```bash
+docker compose down
+```
+
+## Base de datos
+
+Se utiliza PostgreSQL 17 como base de datos del proyecto.
+
+La configuración se realiza mediante variables de entorno definidas en el archivo .env:
+
+- POSTGRES_DB
+- POSTGRES_USER
+- POSTGRES_PASSWORD
+
+## Volumen
+
+Se utiliza el volumen postgres_data para almacenar de manera persistente los datos de PostgreSQL, evitando que se pierdan al eliminar o volver a crear el contenedor.
