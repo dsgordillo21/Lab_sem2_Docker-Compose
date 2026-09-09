@@ -68,3 +68,6 @@ Se utiliza el volumen postgres_data para almacenar de manera persistente los dat
 - Volumes: Son administrados por Docker y permiten mantener los datos aunque el contenedor sea eliminado.
 - Bind mounts: Enlazan una carpeta o archivo del equipo anfitrión con una ubicación dentro del contenedor.
 - Tmpfs mounts: Almacenan información temporalmente en la memoria RAM y los datos se pierden cuando el contenedor se detiene.
+
+## Persistencia
+Se comprobó la persistencia del volumen al detener y volver a crear los contenedores, verificando que los datos almacenados en PostgreSQL se mantuvieron.
